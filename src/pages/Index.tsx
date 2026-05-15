@@ -449,7 +449,7 @@ function Index() {
         <div className="container">
           <span className="section-tag" style={{ color: "var(--teal-light)" }}>O que oferecemos</span>
           <h2 className="section-title">Serviços <span className="accent">especializados</span></h2>
-          <p className="section-sub" style={{ color: "rgba(255,255,255,.6)" }}>Soluções completas para quem compra, vende, aluga ou investe.</p>
+          <p className="section-sub" style={{ color: "rgba(255,255,255,.82)" }}>Soluções completas para quem compra, vende, aluga ou investe.</p>
           <div className="servicos-grid" style={{ marginTop: 50 }}>
             {[
               { t: "Compra e Venda", d: "Mediação completa do processo com avaliação de mercado, divulgação estratégica e suporte jurídico em toda a documentação.", p: <><path d="M3 11l9-8 9 8v10a2 2 0 0 1-2 2h-4v-7h-6v7H5a2 2 0 0 1-2-2V11z"/></> },
