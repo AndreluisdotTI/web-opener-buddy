@@ -136,7 +136,7 @@
       font-style: italic; font-weight: 700;
     }
     .hero-desc {
-      font-size: 1.05rem; color: rgba(255,255,255,.78);
+      font-size: 1.05rem; color: rgba(255,255,255,.92);
       line-height: 1.7; max-width: 540px; margin-bottom: 38px;
       animation: fadeUp .8s ease .45s both;
     }
@@ -488,7 +488,7 @@
     }
     .servico-icon svg { width: 26px; height: 26px; }
     .servico h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--white); margin-bottom: 10px; }
-    .servico p { font-size: .92rem; line-height: 1.7; color: rgba(255,255,255,.82); }
+    .servico p { font-size: .92rem; line-height: 1.7; color: rgba(255,255,255,.9); }
 
     /* ------------ CTA BANNER ------------ */
     .cta-banner {
@@ -505,10 +505,11 @@
       -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 80%);
     }
     .cta-banner .container { position: relative; z-index: 2; }
-    .cta-banner .section-tag { color: rgba(255,255,255,.9); justify-content: center; }
+    .cta-banner .section-tag { color: #ffffff; justify-content: center; }
     .cta-banner .section-tag::before { background: var(--white); }
+    .cta-banner .section-title { color: var(--white); }
     .cta-banner .section-title { color: var(--white); margin: 0 auto 18px; }
-    .cta-banner p { color: rgba(255,255,255,.85); font-size: 1rem; line-height: 1.7; max-width: 540px; margin: 0 auto 32px; }
+    .cta-banner p { color: rgba(255,255,255,.94); font-size: 1rem; line-height: 1.7; max-width: 540px; margin: 0 auto 32px; }
     .cta-banner .btn-primary { background: var(--white); color: var(--navy); }
     .cta-banner .btn-primary:hover { background: var(--ink); color: var(--white); }
 
@@ -579,22 +580,22 @@
     .btn-submit:hover { background: var(--teal); transform: translateY(-2px); box-shadow: 0 10px 24px rgba(43,168,181,.35); }
 
     /* ------------ FOOTER ------------ */
-    footer { background: var(--navy-deep); padding: 70px 48px 28px; color: rgba(255,255,255,.7); }
-    .footer-top { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 50px; padding-bottom: 44px; border-bottom: 1px solid rgba(255,255,255,.08); margin-bottom: 24px; }
+    footer { background: var(--navy-deep); padding: 70px 48px 28px; color: rgba(255,255,255,.85); }
+    .footer-top { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 50px; padding-bottom: 44px; border-bottom: 1px solid rgba(255,255,255,.14); margin-bottom: 24px; }
     .footer-brand .brand { margin-bottom: 18px; }
     .footer-brand .brand-name { color: var(--white); }
-    .footer-brand p { font-size: .9rem; line-height: 1.75; color: rgba(255,255,255,.55); max-width: 320px; }
-    .footer-col h4 { font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; color: var(--teal-light); margin-bottom: 18px; font-weight: 700; }
+    .footer-brand p { font-size: .9rem; line-height: 1.75; color: rgba(255,255,255,.82); max-width: 320px; }
+    .footer-col h4 { font-size: .75rem; letter-spacing: .18em; text-transform: uppercase; color: var(--teal-light); margin-bottom: 18px; font-weight: 700; }
     .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-    .footer-col ul li a { text-decoration: none; font-size: .9rem; color: rgba(255,255,255,.6); transition: color .25s; }
+    .footer-col ul li a { text-decoration: none; font-size: .92rem; color: rgba(255,255,255,.88); transition: color .25s; }
     .footer-col ul li a:hover { color: var(--teal-light); }
     .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; }
-    .footer-bottom p { font-size: .82rem; color: rgba(255,255,255,.4); }
+    .footer-bottom p { font-size: .85rem; color: rgba(255,255,255,.75); }
     .social-links { display: flex; gap: 10px; }
     .social-link {
-      width: 40px; height: 40px; border: 1px solid rgba(255,255,255,.12);
+      width: 40px; height: 40px; border: 1px solid rgba(255,255,255,.22);
       border-radius: 50%; display: flex; align-items: center; justify-content: center;
-      text-decoration: none; color: rgba(255,255,255,.6); transition: all .3s;
+      text-decoration: none; color: rgba(255,255,255,.9); transition: all .3s;
     }
     .social-link svg { width: 18px; height: 18px; }
     .social-link:hover { border-color: var(--teal); color: var(--teal-light); background: rgba(43,168,181,.1); }

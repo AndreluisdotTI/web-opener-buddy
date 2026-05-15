@@ -449,7 +449,7 @@ function Index() {
         <div className="container">
           <span className="section-tag" style={{ color: "var(--teal-light)" }}>O que oferecemos</span>
           <h2 className="section-title">Serviços <span className="accent">especializados</span></h2>
-          <p className="section-sub" style={{ color: "rgba(255,255,255,.82)" }}>Soluções completas para quem compra, vende, aluga ou investe.</p>
+          <p className="section-sub" style={{ color: "rgba(255,255,255,.92)" }}>Soluções completas para quem compra, vende, aluga ou investe.</p>
           <div className="servicos-grid" style={{ marginTop: 50 }}>
             {[
               { t: "Compra e Venda", d: "Mediação completa do processo com avaliação de mercado, divulgação estratégica e suporte jurídico em toda a documentação.", p: <><path d="M3 11l9-8 9 8v10a2 2 0 0 1-2 2h-4v-7h-6v7H5a2 2 0 0 1-2-2V11z"/></> },
@@ -474,7 +474,7 @@ function Index() {
       <div className="cta-banner">
         <div className="container">
           <span className="section-tag">Anuncie conosco</span>
-          <h2 className="section-title">Quer vender ou alugar <span className="accent" style={{ color: "rgba(255,255,255,.7)" }}>seu imóvel?</span></h2>
+          <h2 className="section-title">Quer vender ou alugar <span className="accent" style={{ color: "var(--teal-light)", fontStyle: "italic" }}>seu imóvel?</span></h2>
           <p>Cuidamos de cada etapa com atenção e profissionalismo. Você nos confia o seu bem, nós entregamos resultados.</p>
           <a href="#contato" className="btn btn-primary">Cadastrar meu imóvel <span className="arrow">→</span></a>
         </div>
