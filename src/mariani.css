@@ -12,9 +12,9 @@
       --silver-light:#D8DDE1;
       --white:       #FFFFFF;
       --off-white:   #F5F7FA;
-      --ink:         #0F1B33;
-      --muted:       #4A5871;
-      --line:        #D8DEE8;
+      --ink:         #0A1428;
+      --muted:       #3A4763;
+      --line:        #C9D1DD;
     }
     html { scroll-behavior: smooth; }
     body {
@@ -224,7 +224,7 @@
     .section-tag {
       display: inline-flex; align-items: center; gap: 10px;
       font-size: .72rem; letter-spacing: .18em; text-transform: uppercase;
-      color: var(--teal); margin-bottom: 14px; font-weight: 600;
+      color: #1B7680; margin-bottom: 14px; font-weight: 700;
     }
     .section-tag::before { content: ''; width: 24px; height: 2px; background: var(--teal); border-radius: 2px; }
     .section-title {
@@ -372,7 +372,7 @@
     .gallery-dot:hover { background: rgba(255,255,255,.85); }
     .gallery-dot.active { background: var(--white); width: 26px; }
     .modal-body { padding: 38px 36px 28px; display: flex; flex-direction: column; position: relative; }
-    .modal-location { font-size: .78rem; color: var(--teal); font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 10px; }
+    .modal-location { font-size: .8rem; color: #1B7680; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 10px; }
     .modal-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.7rem; font-weight: 700; color: var(--navy); line-height: 1.2; margin-bottom: 6px; }
     .modal-price { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.15rem; font-weight: 800; color: var(--teal); margin-bottom: 22px; line-height: 1.1; }
     .modal-price small { font-size: .85rem; color: var(--muted); font-weight: 500; }
@@ -536,7 +536,7 @@
     .info-icon svg { width: 20px; height: 20px; }
     .info-text strong { display: block; font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; font-weight: 600; }
     .info-text span { font-size: .92rem; color: var(--ink); font-weight: 500; line-height: 1.45; display: block; }
-    .maps-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; color: var(--teal); font-size: .82rem; font-weight: 600; text-decoration: none; transition: gap .25s, color .25s; }
+    .maps-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; color: #1B7680; font-size: .85rem; font-weight: 700; text-decoration: none; transition: gap .25s, color .25s; }
     .maps-link:hover { color: var(--navy); gap: 10px; }
     .maps-link .arrow { transition: transform .25s; }
     .maps-link:hover .arrow { transform: translateX(2px); }
