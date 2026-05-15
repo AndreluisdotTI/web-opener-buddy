@@ -533,9 +533,9 @@
       flex-shrink: 0;
     }
     .info-icon svg { width: 20px; height: 20px; }
-    .info-text strong { display: block; font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; font-weight: 600; }
-    .info-text span { font-size: .92rem; color: var(--ink); font-weight: 500; line-height: 1.45; display: block; }
-    .maps-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; color: #1B7680; font-size: .85rem; font-weight: 700; text-decoration: none; transition: gap .25s, color .25s; }
+    .info-text strong { display: block; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: #000; margin-bottom: 3px; font-weight: 700; }
+    .info-text span { font-size: .94rem; color: #000; font-weight: 600; line-height: 1.45; display: block; }
+    .maps-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; color: #000; font-size: .85rem; font-weight: 700; text-decoration: none; transition: gap .25s, color .25s; }
     .maps-link:hover { color: var(--navy); gap: 10px; }
     .maps-link .arrow { transition: transform .25s; }
     .maps-link:hover .arrow { transform: translateX(2px); }
