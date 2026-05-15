@@ -170,7 +170,13 @@ function Index() {
 
   useEffect(() => {
     document.body.style.overflow = selected ? "hidden" : "";
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setSelected(null);
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setSelected(null);
+      if (!selected) return;
+      const len = (selected.images && selected.images.length) || 1;
+      if (e.key === "ArrowRight") setGalleryIdx((i) => (i + 1) % len);
+      if (e.key === "ArrowLeft") setGalleryIdx((i) => (i - 1 + len) % len);
+    };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [selected]);
