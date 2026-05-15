@@ -313,6 +313,16 @@ function Index() {
                   <div className="card-overlay">
                     <button className="card-view-btn">Ver detalhes →</button>
                   </div>
+                  <a
+                    href={`${WA}?text=${encodeURIComponent(`Olá! Tenho interesse no imóvel "${im.title}" (${im.tipoLabel}) em ${im.location}.`)}`}
+                    target="_blank" rel="noreferrer"
+                    className="card-wa-quick"
+                    onClick={(e) => e.stopPropagation()}
+                    aria-label="Falar no WhatsApp"
+                    title="Falar no WhatsApp"
+                  >
+                    <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 0C7.16 0 0 7.16 0 16c0 2.82.74 5.48 2.02 7.78L0 32l8.47-2A15.9 15.9 0 0 0 16 32c8.84 0 16-7.16 16-16S24.84 0 16 0zm7.27 20.43c-.4-.2-2.36-1.16-2.72-1.3-.37-.13-.63-.2-.9.2-.27.4-1.03 1.3-1.27 1.56-.23.27-.46.3-.86.1-.4-.2-1.68-.62-3.2-1.97-1.18-1.06-1.98-2.36-2.22-2.76-.23-.4-.02-.62.18-.81.18-.18.4-.46.6-.7.2-.23.27-.4.4-.66.13-.27.07-.5-.03-.7-.1-.2-.9-2.16-1.23-2.96-.32-.78-.65-.67-.9-.69l-.76-.01c-.27 0-.7.1-1.06.5-.37.4-1.4 1.36-1.4 3.32s1.43 3.86 1.63 4.12c.2.27 2.81 4.3 6.81 6.02.95.4 1.7.65 2.27.84.96.3 1.83.26 2.51.16.77-.12 2.36-.97 2.69-1.9.33-.93.33-1.73.23-1.9-.1-.16-.36-.26-.76-.46z"/></svg>
+                  </a>
                 </div>
                 <div className="card-body">
                   <div className="card-price" dangerouslySetInnerHTML={{ __html: im.priceHtml ?? im.price }} />
@@ -439,7 +449,7 @@ function Index() {
         <div className="container">
           <span className="section-tag" style={{ color: "var(--teal-light)" }}>O que oferecemos</span>
           <h2 className="section-title">Serviços <span className="accent">especializados</span></h2>
-          <p className="section-sub" style={{ color: "rgba(255,255,255,.6)" }}>Soluções completas para quem compra, vende, aluga ou investe.</p>
+          <p className="section-sub" style={{ color: "rgba(255,255,255,.82)" }}>Soluções completas para quem compra, vende, aluga ou investe.</p>
           <div className="servicos-grid" style={{ marginTop: 50 }}>
             {[
               { t: "Compra e Venda", d: "Mediação completa do processo com avaliação de mercado, divulgação estratégica e suporte jurídico em toda a documentação.", p: <><path d="M3 11l9-8 9 8v10a2 2 0 0 1-2 2h-4v-7h-6v7H5a2 2 0 0 1-2-2V11z"/></> },
