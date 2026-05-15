@@ -443,7 +443,7 @@
     .accent-card .lbl { font-size: .8rem; opacity: .9; margin-top: 6px; }
 
     .sobre-text .section-title { margin-bottom: 20px; }
-    .sobre-text p { font-size: 1rem; line-height: 1.8; color: var(--muted); margin-bottom: 16px; }
+    .sobre-text p { font-size: 1rem; line-height: 1.8; color: #6B7A93; margin-bottom: 16px; }
     .sobre-values { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 30px 0 36px; }
     .value-pill {
       display: flex; align-items: center; gap: 12px;
