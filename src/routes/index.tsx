@@ -51,6 +51,11 @@ import colina070Container from "@/assets/colina070-container.jpg";
 import colina070Corredor from "@/assets/colina070-corredor.jpg";
 import colina070Banheiro1 from "@/assets/colina070-banheiro1.jpg";
 import colina070Banheiro2 from "@/assets/colina070-banheiro2.jpg";
+import colinaVlpFachada from "@/assets/colina-vlp-fachada.jpg";
+import colinaVlpSala102 from "@/assets/colina-vlp-sala102-vista.jpg";
+import colinaVlpLoja01 from "@/assets/colina-vlp-loja01-fundos.jpg";
+import colinaVlpCorredor1 from "@/assets/colina-vlp-corredor-banheiro.jpg";
+import colinaVlpCorredor2 from "@/assets/colina-vlp-corredor-fundos.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -90,6 +95,18 @@ type Imovel = {
 };
 
 const IMOVEIS: Imovel[] = [
+  {
+    tipo: "locacao", tipoLabel: "Locação",
+    title: "Rede Colina · Valparaíso Representações",
+    location: "Posto Ipiranga · Valparaíso de Goiás – GO",
+    price: "Sob consulta",
+    quartos: "—", banheiros: "Coletivo", area: "Diversas", vagas: "Amplo",
+    desc: "Espaços comerciais para locação no complexo da Rede Colina – Valparaíso Representações, junto ao Posto Ipiranga em Valparaíso de Goiás. Localização estratégica de altíssimo fluxo, com fachada voltada para avenida principal e estacionamento amplo do posto. Disponíveis lojas térreas e salas no pavimento superior (incluindo a Sala 102 com vista panorâmica para a avenida e o posto), além de áreas técnicas e de apoio nos fundos. Estrutura com banheiros coletivos acessíveis, corredor de serviço, segurança e grande circulação de clientes. Ideal para lojas, escritórios, representações comerciais, clínicas, franquias e prestadores de serviço.",
+    img: colinaVlpFachada,
+    thumb: colinaVlpFachada,
+    images: [colinaVlpFachada, colinaVlpSala102, colinaVlpCorredor1, colinaVlpCorredor2, colinaVlpLoja01],
+    cardTitle: "Rede Colina · Valparaíso Representações · Posto Ipiranga",
+  },
   {
     tipo: "locacao", tipoLabel: "Locação",
     title: "Rede Colina 070 · Lojas e Box em Taguatinga Norte",
