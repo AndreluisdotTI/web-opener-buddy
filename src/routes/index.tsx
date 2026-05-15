@@ -7,6 +7,15 @@ import casaEtapaEFachada from "@/assets/casa-etapa-e-fachada.jpg";
 import casaEtapaEGourmet from "@/assets/casa-etapa-e-gourmet.jpg";
 import casaEtapaESala from "@/assets/casa-etapa-e-sala.jpg";
 import casaEtapaEBanheiro from "@/assets/casa-etapa-e-banheiro.jpg";
+import casaEtapaESala2 from "@/assets/casa-etapa-e-sala2.jpg";
+import casaEtapaEEscada from "@/assets/casa-etapa-e-escada.jpg";
+import casaEtapaEChurrasqueira from "@/assets/casa-etapa-e-churrasqueira.jpg";
+import casaEtapaEBanheiro2 from "@/assets/casa-etapa-e-banheiro2.jpg";
+import casaEtapaEBanheiro3 from "@/assets/casa-etapa-e-banheiro3.jpg";
+import casaEtapaEQuarto1 from "@/assets/casa-etapa-e-quarto1.jpg";
+import casaEtapaEQuarto2 from "@/assets/casa-etapa-e-quarto2.jpg";
+import casaEtapaEEntrada from "@/assets/casa-etapa-e-entrada.jpg";
+import casaEtapaEMezanino from "@/assets/casa-etapa-e-mezanino.jpg";
 import sobradoPracaFachada from "@/assets/sobrado-praca-fachada.jpg";
 import sobradoPracaFachada2 from "@/assets/sobrado-praca-fachada2.jpg";
 import sobradoPracaPiscina from "@/assets/sobrado-praca-piscina.jpg";
@@ -164,7 +173,7 @@ const IMOVEIS: Imovel[] = [
     desc: "Excelente casa na Etapa E, próxima à BR. Lote de 360m² com 4 quartos (1 suíte com hidromassagem e box de dois chuveiros), banheiro social, duas salas amplas com sanca de gesso, cozinha com armários embutidos e pedra Selestone. Área gourmet completa com balcão, churrasqueira, fogão a lenha, banheiro e área de serviço. Mezanino superior em madeira (academia/quarto multifuncional) e pérgola em madeira e vidro. Aceita permuta em carro como parte do pagamento.",
     img: casaEtapaEFachada,
     thumb: casaEtapaEFachada,
-    images: [casaEtapaEFachada, casaEtapaEGourmet, casaEtapaESala, casaEtapaEBanheiro],
+    images: [casaEtapaEFachada, casaEtapaEEntrada, casaEtapaESala, casaEtapaESala2, casaEtapaEMezanino, casaEtapaEEscada, casaEtapaEQuarto1, casaEtapaEQuarto2, casaEtapaEChurrasqueira, casaEtapaEGourmet, casaEtapaEBanheiro, casaEtapaEBanheiro2, casaEtapaEBanheiro3],
     cardTitle: "Casa 4 quartos com área gourmet · Etapa E",
   },
   {
