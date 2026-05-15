@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import "../mariani.css";
 import logo from "@/assets/mariani-logo.png";
 import heroImg from "@/assets/mariani-hero.jpg";
+import casaEtapaEFachada from "@/assets/casa-etapa-e-fachada.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -41,6 +42,17 @@ type Imovel = {
 };
 
 const IMOVEIS: Imovel[] = [
+  {
+    tipo: "venda", tipoLabel: "Venda",
+    title: "Casa com Área Gourmet e Mezanino",
+    location: "Etapa E · Valparaíso de Goiás – GO",
+    price: "R$ 750.000",
+    quartos: "4", banheiros: "2", area: "360m²", vagas: "2",
+    desc: "Excelente casa na Etapa E, próxima à BR. Lote de 360m² com 4 quartos (1 suíte com hidromassagem e box de dois chuveiros), banheiro social, duas salas amplas com sanca de gesso, cozinha com armários embutidos e pedra Selestone. Área gourmet completa com balcão, churrasqueira, fogão a lenha, banheiro e área de serviço. Mezanino superior em madeira (academia/quarto multifuncional) e pérgola em madeira e vidro. Aceita permuta em carro como parte do pagamento.",
+    img: casaEtapaEFachada,
+    thumb: casaEtapaEFachada,
+    cardTitle: "Casa 4 quartos com área gourmet · Etapa E",
+  },
   {
     tipo: "venda", tipoLabel: "Venda",
     title: "Casa com Área de Lazer",
