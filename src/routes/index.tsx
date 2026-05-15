@@ -16,6 +16,16 @@ import sobradoPracaSala from "@/assets/sobrado-praca-sala.jpg";
 import sobradoPracaEscada from "@/assets/sobrado-praca-escada.jpg";
 import sobradoPracaMezanino from "@/assets/sobrado-praca-mezanino.jpg";
 import sobradoPracaSuite from "@/assets/sobrado-praca-suite.jpg";
+import higs707Fachada from "@/assets/higs707-fachada.jpg";
+import higs707Fachada2 from "@/assets/higs707-fachada2.jpg";
+import higs707Cozinha from "@/assets/higs707-cozinha.jpg";
+import higs707Quarto1 from "@/assets/higs707-quarto1.jpg";
+import higs707Quarto2 from "@/assets/higs707-quarto2.jpg";
+import higs707Quarto3 from "@/assets/higs707-quarto3.jpg";
+import higs707AreaServico from "@/assets/higs707-area-servico.jpg";
+import higs707Garagem from "@/assets/higs707-garagem.jpg";
+import higs707Lavanderia from "@/assets/higs707-lavanderia.jpg";
+import higs707Deposito from "@/assets/higs707-deposito.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -55,6 +65,18 @@ type Imovel = {
 };
 
 const IMOVEIS: Imovel[] = [
+  {
+    tipo: "venda", tipoLabel: "Venda",
+    title: "Casa W3 Sul · HIGS 707 Bloco J",
+    location: "W3 Sul · HIGS 707 Bloco J Casa 80 · Brasília – DF",
+    price: "R$ 1.600.000",
+    quartos: "3", banheiros: "3", area: "—", vagas: "1",
+    desc: "Casa em duas frentes na W3 Sul, HIGS 707 Bloco J Casa 80. Imóvel com fachada em pastilhas, ampla varanda frontal gradeada e entrada lateral arborizada. Possui 3 quartos com armários planejados em estilo clássico, cozinha espaçosa com copa, área de serviço coberta com pergolado, lavanderia auxiliar, depósito e garagem coberta com escada caracol de acesso ao pavimento superior. Localização nobre em Brasília, próximo a comércio, escolas e transporte.",
+    img: higs707Fachada,
+    thumb: higs707Fachada,
+    images: [higs707Fachada, higs707Fachada2, higs707Cozinha, higs707Quarto1, higs707Quarto2, higs707Quarto3, higs707Garagem, higs707AreaServico, higs707Lavanderia, higs707Deposito],
+    cardTitle: "Casa 3 quartos · HIGS 707 W3 Sul · Brasília",
+  },
   {
     tipo: "venda", tipoLabel: "Venda",
     title: "Casa com Área Gourmet e Mezanino",
