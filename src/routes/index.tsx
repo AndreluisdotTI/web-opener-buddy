@@ -153,7 +153,11 @@ function Index() {
   const [filter, setFilter] = useState<"todos" | "venda" | "locacao">("todos");
   const [menuOpen, setMenuOpen] = useState(false);
   const [selected, setSelected] = useState<Imovel | null>(null);
+  const [galleryIdx, setGalleryIdx] = useState(0);
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => { setGalleryIdx(0); }, [selected]);
+  const galleryImages = selected ? (selected.images && selected.images.length ? selected.images : [selected.img]) : [];
 
   useEffect(() => {
     const obs = new IntersectionObserver(
