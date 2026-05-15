@@ -64,6 +64,7 @@ const IMOVEIS: Imovel[] = [
     desc: "Excelente casa na Etapa E, próxima à BR. Lote de 360m² com 4 quartos (1 suíte com hidromassagem e box de dois chuveiros), banheiro social, duas salas amplas com sanca de gesso, cozinha com armários embutidos e pedra Selestone. Área gourmet completa com balcão, churrasqueira, fogão a lenha, banheiro e área de serviço. Mezanino superior em madeira (academia/quarto multifuncional) e pérgola em madeira e vidro. Aceita permuta em carro como parte do pagamento.",
     img: casaEtapaEFachada,
     thumb: casaEtapaEFachada,
+    images: [casaEtapaEFachada, casaEtapaEGourmet, casaEtapaESala, casaEtapaEBanheiro],
     cardTitle: "Casa 4 quartos com área gourmet · Etapa E",
   },
   {
@@ -75,6 +76,7 @@ const IMOVEIS: Imovel[] = [
     desc: "Sobrado residencial de 2 pavimentos em rua tranquila com praça arborizada em frente. 6 quartos no total — 3 suítes no pavimento superior e 1 suíte no inferior, sendo uma com varanda voltada para a piscina. Duas salas com entradas independentes conectadas por corredor, banheiro social e banheiro de apoio à piscina. Área de lazer completa: piscina adulta e infantil em formato oval, área gramada com palmeira, área gourmet coberta com churrasqueira em tijolinho aparente, forno de pizza e bancada em pastilha azul/turquesa com granito. Garagem coberta com portão para até 3 veículos. Aceita financiamento, FGTS e permuta de veículo.",
     img: sobradoPracaFachada,
     thumb: sobradoPracaFachada,
+    images: [sobradoPracaFachada, sobradoPracaFachada2, sobradoPracaPiscina, sobradoPracaGourmet, sobradoPracaCozinha, sobradoPracaSala, sobradoPracaEscada, sobradoPracaMezanino, sobradoPracaSuite],
     cardTitle: "Sobrado 6 quartos frente à praça · Valparaíso I",
   },
   {
