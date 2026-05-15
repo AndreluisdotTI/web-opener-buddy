@@ -65,24 +65,9 @@ import colinaVlpLoja01 from "@/assets/colina-vlp-loja01-fundos.jpg";
 import colinaVlpCorredor1 from "@/assets/colina-vlp-corredor-banheiro.jpg";
 import colinaVlpCorredor2 from "@/assets/colina-vlp-corredor-fundos.jpg";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Mariani Imob – Gestão Inteligente · Valparaíso de Goiás" },
-      {
-        name: "description",
-        content:
-          "Imobiliária em Valparaíso de Goiás: compra, venda e locação com atendimento personalizado e gestão inteligente.",
-      },
-      { property: "og:title", content: "Mariani Imob – Gestão Inteligente" },
-      {
-        property: "og:description",
-        content: "Compra, venda e locação de imóveis em Valparaíso de Goiás.",
-      },
-    ],
-  }),
-  component: Index,
-});
+export default function IndexPage() {
+  return <Index />;
+}
 
 type Imovel = {
   tipo: "venda" | "locacao";
