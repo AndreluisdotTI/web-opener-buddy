@@ -315,8 +315,39 @@ function Index() {
           <div className="modal">
             <button className="modal-close" onClick={() => setSelected(null)}>✕</button>
             <div className="modal-gallery">
-              <img src={selected.img} alt={selected.title} />
+              <div className="gallery-track" style={{ transform: `translateX(-${galleryIdx * 100}%)` }}>
+                {galleryImages.map((src, i) => (
+                  <div className="gallery-slide" key={i}>
+                    <img src={src} alt={`${selected.title} - foto ${i + 1}`} />
+                  </div>
+                ))}
+              </div>
               <span className={`modal-gallery-badge${selected.tipo === "locacao" ? " locacao" : ""}`}>{selected.tipoLabel}</span>
+              {galleryImages.length > 1 && (
+                <>
+                  <button
+                    className="gallery-nav prev"
+                    aria-label="Foto anterior"
+                    onClick={() => setGalleryIdx((i) => (i - 1 + galleryImages.length) % galleryImages.length)}
+                  >‹</button>
+                  <button
+                    className="gallery-nav next"
+                    aria-label="Próxima foto"
+                    onClick={() => setGalleryIdx((i) => (i + 1) % galleryImages.length)}
+                  >›</button>
+                  <div className="gallery-counter">{galleryIdx + 1} / {galleryImages.length}</div>
+                  <div className="gallery-dots">
+                    {galleryImages.map((_, i) => (
+                      <button
+                        key={i}
+                        className={`gallery-dot${i === galleryIdx ? " active" : ""}`}
+                        onClick={() => setGalleryIdx(i)}
+                        aria-label={`Ir para foto ${i + 1}`}
+                      />
+                    ))}
+                  </div>
+                </>
+              )}
             </div>
             <div className="modal-body">
               <span className="modal-location">{selected.location}</span>
