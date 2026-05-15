@@ -4,7 +4,18 @@ import "../mariani.css";
 import logo from "@/assets/mariani-logo.png";
 import heroImg from "@/assets/mariani-hero.jpg";
 import casaEtapaEFachada from "@/assets/casa-etapa-e-fachada.jpg";
+import casaEtapaEGourmet from "@/assets/casa-etapa-e-gourmet.jpg";
+import casaEtapaESala from "@/assets/casa-etapa-e-sala.jpg";
+import casaEtapaEBanheiro from "@/assets/casa-etapa-e-banheiro.jpg";
 import sobradoPracaFachada from "@/assets/sobrado-praca-fachada.jpg";
+import sobradoPracaFachada2 from "@/assets/sobrado-praca-fachada2.jpg";
+import sobradoPracaPiscina from "@/assets/sobrado-praca-piscina.jpg";
+import sobradoPracaGourmet from "@/assets/sobrado-praca-gourmet.jpg";
+import sobradoPracaCozinha from "@/assets/sobrado-praca-cozinha.jpg";
+import sobradoPracaSala from "@/assets/sobrado-praca-sala.jpg";
+import sobradoPracaEscada from "@/assets/sobrado-praca-escada.jpg";
+import sobradoPracaMezanino from "@/assets/sobrado-praca-mezanino.jpg";
+import sobradoPracaSuite from "@/assets/sobrado-praca-suite.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -39,6 +50,7 @@ type Imovel = {
   desc: string;
   img: string;
   thumb: string;
+  images?: string[];
   cardTitle: string;
 };
 
@@ -52,6 +64,7 @@ const IMOVEIS: Imovel[] = [
     desc: "Excelente casa na Etapa E, próxima à BR. Lote de 360m² com 4 quartos (1 suíte com hidromassagem e box de dois chuveiros), banheiro social, duas salas amplas com sanca de gesso, cozinha com armários embutidos e pedra Selestone. Área gourmet completa com balcão, churrasqueira, fogão a lenha, banheiro e área de serviço. Mezanino superior em madeira (academia/quarto multifuncional) e pérgola em madeira e vidro. Aceita permuta em carro como parte do pagamento.",
     img: casaEtapaEFachada,
     thumb: casaEtapaEFachada,
+    images: [casaEtapaEFachada, casaEtapaEGourmet, casaEtapaESala, casaEtapaEBanheiro],
     cardTitle: "Casa 4 quartos com área gourmet · Etapa E",
   },
   {
@@ -63,6 +76,7 @@ const IMOVEIS: Imovel[] = [
     desc: "Sobrado residencial de 2 pavimentos em rua tranquila com praça arborizada em frente. 6 quartos no total — 3 suítes no pavimento superior e 1 suíte no inferior, sendo uma com varanda voltada para a piscina. Duas salas com entradas independentes conectadas por corredor, banheiro social e banheiro de apoio à piscina. Área de lazer completa: piscina adulta e infantil em formato oval, área gramada com palmeira, área gourmet coberta com churrasqueira em tijolinho aparente, forno de pizza e bancada em pastilha azul/turquesa com granito. Garagem coberta com portão para até 3 veículos. Aceita financiamento, FGTS e permuta de veículo.",
     img: sobradoPracaFachada,
     thumb: sobradoPracaFachada,
+    images: [sobradoPracaFachada, sobradoPracaFachada2, sobradoPracaPiscina, sobradoPracaGourmet, sobradoPracaCozinha, sobradoPracaSala, sobradoPracaEscada, sobradoPracaMezanino, sobradoPracaSuite],
     cardTitle: "Sobrado 6 quartos frente à praça · Valparaíso I",
   },
   {
@@ -139,7 +153,11 @@ function Index() {
   const [filter, setFilter] = useState<"todos" | "venda" | "locacao">("todos");
   const [menuOpen, setMenuOpen] = useState(false);
   const [selected, setSelected] = useState<Imovel | null>(null);
+  const [galleryIdx, setGalleryIdx] = useState(0);
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => { setGalleryIdx(0); }, [selected]);
+  const galleryImages = selected ? (selected.images && selected.images.length ? selected.images : [selected.img]) : [];
 
   useEffect(() => {
     const obs = new IntersectionObserver(
@@ -152,7 +170,13 @@ function Index() {
 
   useEffect(() => {
     document.body.style.overflow = selected ? "hidden" : "";
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setSelected(null);
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setSelected(null);
+      if (!selected) return;
+      const len = (selected.images && selected.images.length) || 1;
+      if (e.key === "ArrowRight") setGalleryIdx((i) => (i + 1) % len);
+      if (e.key === "ArrowLeft") setGalleryIdx((i) => (i - 1 + len) % len);
+    };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [selected]);
@@ -291,8 +315,39 @@ function Index() {
           <div className="modal">
             <button className="modal-close" onClick={() => setSelected(null)}>✕</button>
             <div className="modal-gallery">
-              <img src={selected.img} alt={selected.title} />
+              <div className="gallery-track" style={{ transform: `translateX(-${galleryIdx * 100}%)` }}>
+                {galleryImages.map((src, i) => (
+                  <div className="gallery-slide" key={i}>
+                    <img src={src} alt={`${selected.title} - foto ${i + 1}`} />
+                  </div>
+                ))}
+              </div>
               <span className={`modal-gallery-badge${selected.tipo === "locacao" ? " locacao" : ""}`}>{selected.tipoLabel}</span>
+              {galleryImages.length > 1 && (
+                <>
+                  <button
+                    className="gallery-nav prev"
+                    aria-label="Foto anterior"
+                    onClick={() => setGalleryIdx((i) => (i - 1 + galleryImages.length) % galleryImages.length)}
+                  >‹</button>
+                  <button
+                    className="gallery-nav next"
+                    aria-label="Próxima foto"
+                    onClick={() => setGalleryIdx((i) => (i + 1) % galleryImages.length)}
+                  >›</button>
+                  <div className="gallery-counter">{galleryIdx + 1} / {galleryImages.length}</div>
+                  <div className="gallery-dots">
+                    {galleryImages.map((_, i) => (
+                      <button
+                        key={i}
+                        className={`gallery-dot${i === galleryIdx ? " active" : ""}`}
+                        onClick={() => setGalleryIdx(i)}
+                        aria-label={`Ir para foto ${i + 1}`}
+                      />
+                    ))}
+                  </div>
+                </>
+              )}
             </div>
             <div className="modal-body">
               <span className="modal-location">{selected.location}</span>
