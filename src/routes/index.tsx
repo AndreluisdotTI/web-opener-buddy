@@ -35,6 +35,14 @@ import padariaLanchonete from "@/assets/padaria-lanchonete.jpg";
 import padariaBalcao from "@/assets/padaria-balcao.jpg";
 import padariaMesas from "@/assets/padaria-mesas.jpg";
 import padariaPaes from "@/assets/padaria-paes.jpg";
+import psulFachada from "@/assets/psul-fachada.jpg";
+import psulFachada2 from "@/assets/psul-fachada2.jpg";
+import psulFachada3 from "@/assets/psul-fachada3.jpg";
+import psulCorredor from "@/assets/psul-corredor.jpg";
+import psulLoja5a from "@/assets/psul-loja-5a.jpg";
+import psulLoja06 from "@/assets/psul-loja-06.jpg";
+import psulLoja07 from "@/assets/psul-loja-07.jpg";
+import psulPosto from "@/assets/psul-posto.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -74,6 +82,18 @@ type Imovel = {
 };
 
 const IMOVEIS: Imovel[] = [
+  {
+    tipo: "locacao", tipoLabel: "Locação",
+    title: "P. Sul · Lojas Comerciais para Locação",
+    location: "P. Sul · Ceilândia – DF",
+    price: "Sob consulta",
+    area: "—", vagas: "Amplo",
+    desc: "Lojas comerciais disponíveis para locação na P. Sul, em ponto de altíssimo fluxo ao lado de posto Ipiranga, lojas de conveniência e avenida movimentada. Galeria recém-revitalizada com fachada moderna em vidro espelhado, cobertura metálica, piso porcelanato, iluminação em LED, pé-direito alto e estrutura em aço. Espaços amplos e versáteis, ideais para lojas, escritórios, franquias, clínicas, restaurantes ou serviços. Estacionamento amplo na frente, fácil acesso e excelente visibilidade. Disponíveis as lojas 5A, 06 e 07, todas entregues prontas para personalização.",
+    img: psulFachada,
+    thumb: psulFachada,
+    images: [psulFachada, psulFachada2, psulFachada3, psulCorredor, psulLoja5a, psulLoja06, psulLoja07, psulPosto],
+    cardTitle: "Lojas P. Sul · Ponto comercial · Ceilândia",
+  },
   {
     tipo: "venda", tipoLabel: "Venda",
     title: "Padaria Consolidada na Av. Principal do Gama",
