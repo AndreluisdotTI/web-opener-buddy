@@ -4,6 +4,7 @@ import "../mariani.css";
 import logo from "@/assets/mariani-logo.png";
 import heroImg from "@/assets/mariani-hero.jpg";
 import casaEtapaEFachada from "@/assets/casa-etapa-e-fachada.jpg";
+import sobradoPracaFachada from "@/assets/sobrado-praca-fachada.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -52,6 +53,17 @@ const IMOVEIS: Imovel[] = [
     img: casaEtapaEFachada,
     thumb: casaEtapaEFachada,
     cardTitle: "Casa 4 quartos com área gourmet · Etapa E",
+  },
+  {
+    tipo: "venda", tipoLabel: "Venda",
+    title: "Sobrado Frente à Praça",
+    location: "Valparaíso I · Valparaíso de Goiás – GO",
+    price: "R$ 530.000",
+    quartos: "6", banheiros: "5", area: "—", vagas: "3",
+    desc: "Sobrado residencial de 2 pavimentos em rua tranquila com praça arborizada em frente. 6 quartos no total — 3 suítes no pavimento superior e 1 suíte no inferior, sendo uma com varanda voltada para a piscina. Duas salas com entradas independentes conectadas por corredor, banheiro social e banheiro de apoio à piscina. Área de lazer completa: piscina adulta e infantil em formato oval, área gramada com palmeira, área gourmet coberta com churrasqueira em tijolinho aparente, forno de pizza e bancada em pastilha azul/turquesa com granito. Garagem coberta com portão para até 3 veículos. Aceita financiamento, FGTS e permuta de veículo.",
+    img: sobradoPracaFachada,
+    thumb: sobradoPracaFachada,
+    cardTitle: "Sobrado 6 quartos frente à praça · Valparaíso I",
   },
   {
     tipo: "venda", tipoLabel: "Venda",
