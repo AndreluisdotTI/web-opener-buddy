@@ -26,6 +26,15 @@ import higs707AreaServico from "@/assets/higs707-area-servico.jpg";
 import higs707Garagem from "@/assets/higs707-garagem.jpg";
 import higs707Lavanderia from "@/assets/higs707-lavanderia.jpg";
 import higs707Deposito from "@/assets/higs707-deposito.jpg";
+import padariaFachada from "@/assets/padaria-fachada.jpg";
+import padariaFachada2 from "@/assets/padaria-fachada2.jpg";
+import padariaEntrada from "@/assets/padaria-entrada.jpg";
+import padariaCaixa from "@/assets/padaria-caixa.jpg";
+import padariaSalao from "@/assets/padaria-salao.jpg";
+import padariaLanchonete from "@/assets/padaria-lanchonete.jpg";
+import padariaBalcao from "@/assets/padaria-balcao.jpg";
+import padariaMesas from "@/assets/padaria-mesas.jpg";
+import padariaPaes from "@/assets/padaria-paes.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -65,6 +74,18 @@ type Imovel = {
 };
 
 const IMOVEIS: Imovel[] = [
+  {
+    tipo: "venda", tipoLabel: "Venda",
+    title: "Padaria Consolidada na Av. Principal do Gama",
+    location: "Setor Leste Quadra 41 · Gama – DF",
+    price: "Sob consulta",
+    area: "200m²", vagas: "—",
+    desc: "Oportunidade única: venda do estabelecimento de uma padaria com mais de 25 anos no mesmo ponto, na avenida principal do Gama, ao lado do Banco do Brasil, sentido Hospital do Gama. Loja ampla de 200m² com pé-direito alto, ótimo estacionamento e fluxo intenso (chegada de Luziânia e Valparaíso). Acompanha todo o maquinário: 2 fornos (Brasforno e Turbo Inox Perfecta), cilindro 2 motores, modeladora, amassadeira 100kg, batedeira 25kg, divisora, fritadeira elétrica, fogão industrial 6 bocas, liquidificador industrial, fatiador automático de frios, chapa, micro-ondas, balança, computador de caixa, balcões em L, boleira, câmara fria 4 portas, gôndolas, estufa para salgados, 4 armários e 4 freezers de manipulação, 4 mesas de manipulação, 5 jogos de mesas para lanchonete e CFTV interno/externo com 12 câmeras. Faturamento médio de R$ 117 mil/mês (2025: R$ 1.405.000) com margem de 15%. Aluguel R$ 3.500/mês. Aceita imóveis (casas e lotes) e carros como parte do pagamento — até R$ 200 mil em bens, restante em dinheiro. Comissão de 5% sobre o valor total. CNPJ não incluso na venda.",
+    img: padariaFachada,
+    thumb: padariaFachada,
+    images: [padariaFachada, padariaFachada2, padariaEntrada, padariaSalao, padariaBalcao, padariaPaes, padariaMesas, padariaLanchonete, padariaCaixa],
+    cardTitle: "Padaria 25 anos · Av. Principal do Gama · 200m²",
+  },
   {
     tipo: "venda", tipoLabel: "Venda",
     title: "Casa W3 Sul · HIGS 707 Bloco J",
