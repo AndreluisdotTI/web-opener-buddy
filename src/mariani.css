@@ -12,9 +12,9 @@
       --silver-light:#D8DDE1;
       --white:       #FFFFFF;
       --off-white:   #F5F7FA;
-      --ink:         #14213D;
-      --muted:       #6B7A92;
-      --line:        #E2E7EF;
+      --ink:         #0F1B33;
+      --muted:       #4A5871;
+      --line:        #D8DEE8;
     }
     html { scroll-behavior: smooth; }
     body {
