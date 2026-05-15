@@ -43,6 +43,14 @@ import psulLoja5a from "@/assets/psul-loja-5a.jpg";
 import psulLoja06 from "@/assets/psul-loja-06.jpg";
 import psulLoja07 from "@/assets/psul-loja-07.jpg";
 import psulPosto from "@/assets/psul-posto.jpg";
+import colina070Posto from "@/assets/colina070-posto.jpg";
+import colina070Lojas from "@/assets/colina070-lojas.jpg";
+import colina070LojaFechada from "@/assets/colina070-loja-fechada.jpg";
+import colina070LojaInterior from "@/assets/colina070-loja-interior.jpg";
+import colina070Container from "@/assets/colina070-container.jpg";
+import colina070Corredor from "@/assets/colina070-corredor.jpg";
+import colina070Banheiro1 from "@/assets/colina070-banheiro1.jpg";
+import colina070Banheiro2 from "@/assets/colina070-banheiro2.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -82,6 +90,18 @@ type Imovel = {
 };
 
 const IMOVEIS: Imovel[] = [
+  {
+    tipo: "locacao", tipoLabel: "Locação",
+    title: "Rede Colina 070 · Lojas e Box em Taguatinga Norte",
+    location: "QNM 40 Área Especial 14 · Taguatinga Norte – DF",
+    price: "Sob consulta",
+    quartos: "—", banheiros: "1", area: "—", vagas: "1 a 3",
+    desc: "Conjunto comercial da Rede Colina 070, ao lado do Posto Ipiranga em Taguatinga Norte, em ponto de altíssimo fluxo na QNM 40. Disponíveis para locação 5 lojas (Loja 01, 02, 03, 04 e 05) e 1 box/container, todos com 1 banheiro e 1 vaga (box com 3 vagas). Estrutura recém-revitalizada com fachada em ACM, portas de aço de enrolar, banheiros coletivos masculino e feminino em porcelanato e granito, corredor interno com sinalização e iluminação em LED, ideais para lojas, depósitos, oficinas, distribuidoras, prestação de serviços e franquias. Excelente visibilidade, estacionamento amplo e acesso facilitado pelo posto. Valores e disponibilidade sob consulta.",
+    img: colina070Lojas,
+    thumb: colina070Lojas,
+    images: [colina070Lojas, colina070LojaFechada, colina070LojaInterior, colina070Container, colina070Corredor, colina070Banheiro1, colina070Banheiro2, colina070Posto],
+    cardTitle: "Rede Colina 070 · 5 lojas + box · Taguatinga Norte",
+  },
   {
     tipo: "locacao", tipoLabel: "Locação",
     title: "P. Sul · Lojas Comerciais para Locação",
