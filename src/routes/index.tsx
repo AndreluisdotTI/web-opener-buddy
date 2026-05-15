@@ -4,7 +4,18 @@ import "../mariani.css";
 import logo from "@/assets/mariani-logo.png";
 import heroImg from "@/assets/mariani-hero.jpg";
 import casaEtapaEFachada from "@/assets/casa-etapa-e-fachada.jpg";
+import casaEtapaEGourmet from "@/assets/casa-etapa-e-gourmet.jpg";
+import casaEtapaESala from "@/assets/casa-etapa-e-sala.jpg";
+import casaEtapaEBanheiro from "@/assets/casa-etapa-e-banheiro.jpg";
 import sobradoPracaFachada from "@/assets/sobrado-praca-fachada.jpg";
+import sobradoPracaFachada2 from "@/assets/sobrado-praca-fachada2.jpg";
+import sobradoPracaPiscina from "@/assets/sobrado-praca-piscina.jpg";
+import sobradoPracaGourmet from "@/assets/sobrado-praca-gourmet.jpg";
+import sobradoPracaCozinha from "@/assets/sobrado-praca-cozinha.jpg";
+import sobradoPracaSala from "@/assets/sobrado-praca-sala.jpg";
+import sobradoPracaEscada from "@/assets/sobrado-praca-escada.jpg";
+import sobradoPracaMezanino from "@/assets/sobrado-praca-mezanino.jpg";
+import sobradoPracaSuite from "@/assets/sobrado-praca-suite.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -39,6 +50,7 @@ type Imovel = {
   desc: string;
   img: string;
   thumb: string;
+  images?: string[];
   cardTitle: string;
 };
 
