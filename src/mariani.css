@@ -247,9 +247,9 @@
       box-shadow: 0 4px 14px rgba(20,33,61,.06);
     }
     .filter-tab {
-      padding: 10px 22px; font-size: .82rem; font-weight: 600;
+      padding: 10px 22px; font-size: .85rem; font-weight: 700;
       cursor: pointer; border: none; background: transparent;
-      color: var(--muted); transition: all .25s;
+      color: #0A1428; transition: all .25s;
       font-family: inherit; border-radius: 999px;
     }
     .filter-tab.active { background: var(--navy); color: var(--white); box-shadow: 0 6px 14px rgba(30,58,111,.25); }
