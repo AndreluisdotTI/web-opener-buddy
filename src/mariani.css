@@ -185,8 +185,8 @@
       color: white; font-weight: 700; font-size: 1.1rem;
     }
     .badge-card .meta { display: flex; flex-direction: column; }
-    .badge-card .meta b { font-size: .95rem; color: var(--navy); font-weight: 700; }
-    .badge-card .meta span { font-size: .72rem; color: var(--muted); }
+    .badge-card .meta b { font-size: .95rem; color: #0A1428; font-weight: 800; }
+    .badge-card .meta span { font-size: .74rem; color: #0A1428; font-weight: 600; }
     .hero-visual .float-card {
       position: absolute; top: 28px; right: -22px;
       background: var(--white); padding: 14px 18px; border-radius: 14px;
